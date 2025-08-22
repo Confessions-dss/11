@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deerwalk Confessions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="dscon.jpg" alt="Deerwalk Confessions Logo" class="logo">
+            <h1>Deerwalk Confessions</h1>
+            <p class="subtitle">Your secrets are safe with us. Anonymously.</p>
+        </header>
+        <main>
+            <form id="confession-form">
+                <textarea id="confession-text" placeholder="Pour your heart out..." required></textarea>
+                <div id="char-counter">0/2000</div>
+                <button type="submit" id="submit-btn">
+                    <span class="button-text">Confess Anonymously</span>
+                    <div class="spinner" style="display: none;"></div>
+                </button>
+            </form>
+            <div id="success-message" style="display: none;">
+                <p>Your confession has been sent successfully!</p>
+                <button id="send-another-btn">Send Another Confession</button>
+            </div>
+        </main>
+        <footer>
+            <p>All confessions are 100% anonymous. We do not track or store any personal information.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
